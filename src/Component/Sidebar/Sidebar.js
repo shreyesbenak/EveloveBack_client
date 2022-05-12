@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Sidebar.css"
 import { Link } from 'react-router-dom'
+import avtar from "../../image/default-avatar-profile-icon-vector-18942381.png"
 // import { Redirect,Switch } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../Utils/Auth';
@@ -15,10 +16,12 @@ function Sidebar() {
    }
   return (
     <div className="sidebar">
-    <div className="sidebar-top">
-        <i className="logo "></i>
-        <span className="brand">EMS</span>
-    </div>
+    
+    <div class="profile">
+                <img src={avtar}alt="profile_picture"/>
+                <h3>Anamika Roy</h3>
+                <p>Designer</p>
+            </div>
     <div className="sidebar-center">
         <ul className="list">
            
