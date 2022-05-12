@@ -108,7 +108,7 @@ function ViewDataTable() {
             </div>
             <button className='btnsearch' onClick={submitHandler}>Search</button>
           </div>
-       
+       <br/>
         <table >
           <tr>
             <th>Date</th>
@@ -138,9 +138,12 @@ function ViewDataTable() {
                 <>
                   <tr>
                     {/* {console.log(typeof(data.date))} */}
-                    <td >{data.date}</td>
-                    <td >{data.timeofrecording}</td>
-                    <td>{data.keb}</td>
+                    <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.date}</td>
+                    <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.timeofrecording}</td>
+                    <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.keb}</td>
                     <td>
                       <table>
 
@@ -153,11 +156,16 @@ function ViewDataTable() {
                               return (
                                 <>
                                   <tr>
-                                    <td>{details.generatorname}</td>
-                                    <td>{details.capacity}</td>
-                                    <td>{details.generation}</td>
-                                    <td>{details.timerun} Hr</td>
-                                    <td>{details.dieselconsumption.$numberDecimal} Ltrs</td>
+                                    <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{details.generatorname}</td>
+                                    <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{details.capacity}</td>
+                                    <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{details.generation}</td>
+                                    <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{details.timerun} Hr</td>
+                                    <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{details.dieselconsumption.$numberDecimal} Ltrs</td>
                                   </tr>
 
                                 </>
@@ -165,11 +173,15 @@ function ViewDataTable() {
                             })}
 
                             <tr>
-                              <td></td>
-                              <td>Total</td>
-                              <td>{data.total[0].totalGeneration}</td>
-                              <td>{data.total[0].totalTimeRun} Hr</td>
-                              <td>{data.total[0].dieselConsumption} Ltrs</td>
+                              {/* <td></td> */}
+                              <td colSpan="2" style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>Total</td>
+                              <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.total[0].totalGeneration}</td>
+                              <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.total[0].totalTimeRun} Hr</td>
+                              <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.total[0].dieselConsumption} Ltrs</td>
                             </tr>
 
                           </table>
@@ -179,22 +191,30 @@ function ViewDataTable() {
                         </tr>
                       </table>
                     </td>
-                    <td>{data.kitchenpng} Kg</td>
-                    <td>{data.waterconsumption} Ltrs</td>
+                    <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.kitchenpng} Kg</td>
+                    <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.waterconsumption} Ltrs</td>
                     <td>
                       <table>
                         <tr>
-                          <td>MIN </td>
-                          <td>{data.weathermin}</td>
+                          <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>MIN </td>
+                          <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.weathermin}</td>
                         </tr>
                         <tr>
-                          <td>MAX </td>
-                          {data.weathermax}
-
+                          <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>MAX </td>
+                         
+<td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}> {data.weathermax}</td>
                         </tr>
                         <tr>
-                          <td>Humidity </td>
-                          <td>{data.humidity}</td>
+                          <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>Humidity </td>
+                          <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}} >{data.humidity}</td>
                         </tr>
 
                       </table>
@@ -204,22 +224,31 @@ function ViewDataTable() {
                     <td>
                       <table >
                         <tr>
-                          <td>KEB </td>
-                          <td>{data.kebrate.$numberDecimal}</td>
+                          <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>KEB </td>
+                          <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.kebrate.$numberDecimal}</td>
                         </tr>
-                        <tr><td>Fuel </td>
-                          <td>{data.fuelrate.$numberDecimal}</td>
+                        <tr><td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>Fuel </td>
+                          <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.fuelrate.$numberDecimal}</td>
                         </tr>
-                        <tr><td>Water </td>
-                          <td>{data.waterrate.$numberDecimal}</td>
+                        <tr><td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>Water </td>
+                          <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.waterrate.$numberDecimal}</td>
                         </tr>
-                        <tr><td>PNG </td>
-                          <td>{data.pngrate.$numberDecimal}</td>
+                        <tr><td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>PNG </td>
+                          <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.pngrate.$numberDecimal}</td>
                         </tr>
                       </table>
 
                     </td>
-                    <td>{data.solargeneration}</td>
+                    <td style={{fontSize:"12px",
+    fontFamily:"Georgia, Regular"}}>{data.solargeneration}</td>
                   </tr>
                 </>
               )
