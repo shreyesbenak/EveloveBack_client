@@ -2,13 +2,14 @@ table {
     font-family: Georgia, Bold;
     border-collapse: collapse;
     width: 100%;
-    margin-top: 20px !important;
+    border: 1px solid #70707030;
+    
 
    
   }
   
   td, th {
-    border: 1px solid #707070;
+    border: 1px solid #70707030;
     text-align: center;
     color: #F1844D;
     padding: 8px;
@@ -19,7 +20,7 @@ table {
       background-color: white;
       font-size: 16px;
       font-family: Georgia, Bold;
-      border: 1px solid #707070;
+      /* border: 1px solid #707070; */
   }
   .table-responsive {
     min-height: .01%;
@@ -69,6 +70,7 @@ margin-left: 30px !important;
 .mainContainer{
     display: flex;
     flex-direction: column;
+    width: 90%;
    
   }
 
