@@ -56,14 +56,26 @@ background-position: center;
         margin-top: 5%;
        
     }
+    .paperstyle{
+        padding: 20;
+         height: '60vh';
+          width: 350;
+    }
 
-    
+
     @media screen and (min-device-width: 360px) and (max-device-width: 765px) { 
         .login{
             margin-left: auto ;
             
               
               }
+              .responsiveDiv{
+                padding: 20px;
+                height: 52vh;
+                width: 53%;
+                margin-top: -2%;
+                margin-left: 5%;
+            }
     }
     @media screen and (min-device-width: 768px) and (max-device-width: 1180px) { 
         .login{
@@ -71,6 +83,13 @@ background-position: center;
             
               
               }
+              .responsiveDiv{
+                padding: 20px;
+                height: 49vh;
+                width: 82%;
+                margin-top: 11%;
+                margin-left: 3.5%;
+            }
     }
     @media screen and (min-device-width: 540px) and (max-device-width: 720px) { 
         .login{
@@ -78,6 +97,13 @@ background-position: center;
             
               
               }
+              .responsiveDiv{
+                padding: 20px;
+                height: 49vh;
+                width: 82%;
+                margin-top: 11%;
+                margin-left: 3.5%;
+            }
     }
     @media screen and (min-device-width: 280px) and (max-device-width: 655px) { 
         .login{
@@ -88,6 +114,13 @@ background-position: center;
             
               
               }
+              .responsiveDiv{
+                padding: 20px;
+                height: 49vh;
+                width: 82%;
+                margin-top: 11%;
+                margin-left: 3.5%;
+            }
     }
 
     @media screen and (min-device-width: 600px) and (max-device-width: 1280px) { 
@@ -97,4 +130,12 @@ background-position: center;
             
               
               }
-    }
+              .responsiveDiv{
+                padding: 20px;
+                height: 49vh;
+                width: 82%;
+                margin-top: 11%;
+                margin-left: 3.5%;
+            }
+    } 
+ 

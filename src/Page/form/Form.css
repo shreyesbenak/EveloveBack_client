@@ -70,14 +70,26 @@
     opacity: 1;
     margin-left: 10px;
     }
-    
     .capacityinput{
+        width: 171px;
+        height: 40px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #9A7036;
+        opacity: 1;
+        color: #CDB89B;
+     
+        }
+    .capacityinput1{
     width: 171px;
     height: 40px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #9A7036;
     opacity: 1;
     color: #CDB89B;
+    
+    }
+    .inputlablegenerator{
+        margin-right: 20px;
     }
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #CDB89B;
@@ -196,6 +208,7 @@
         flex-direction: column;
         width: 1000px;
         height: auto;
+        align-items: center;
       
         background-color: white;
     }
@@ -240,7 +253,112 @@
       
    
   }
-  .mainContainer{
+  .mainContainer1{
     display: flex;
     flex-direction: column;
   }
+  /* .margindiv >div{
+ margin-right: 20px;
+  } */
+
+
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+      margin-bottom: 50%;
+    }
+    .generator{
+        flex-direction: column;
+    
+    }
+    .generator >div{
+        margin-top: 2%;
+    }
+    .heading{
+        justify-content: flex-start;
+        margin-left: 5%;
+    }
+    .containermain{
+        width: 100%;
+        margin-left: 10%;
+        height: auto;
+        align-items: center;
+    }
+    .mainContainer1{
+        width: 70%;
+    }
+    .logoimg1{
+        margin-left: 10%;
+    }
+    .title{
+        font-size: x-large;
+        text-align: center;
+    }
+   
+    .subtitle1,.rate1,
+    .lastdivheading,
+    .generator1,.weather1
+    {
+        font-size: medium;  
+    }
+    .lastdivheading{
+        margin-top: 19px;
+        margin-bottom: 10px;
+    }
+    .submitbtn{
+        margin-bottom: 93%;
+        margin-top: -38%;
+    }
+   
+   
+  }
+  @media screen and (min-device-width: 768px) and (max-device-width: 1180px) 
+{
+    .flex-container {
+        flex-direction: column;
+        margin-bottom:  110%;
+      }
+      .generator{
+          flex-direction: column;
+      
+      }
+      .generator >div{
+          margin-top: 2%;
+      }
+      .heading{
+          justify-content: flex-start;
+          margin-left: 5%;
+      }
+      .containermain{
+          width: 82%;
+          margin-left: 10%;
+          height: auto;
+          align-items: center;
+      }
+      .mainContainer1{
+          width: 70%;
+      }
+      .logoimg1{
+          margin-left: 10%;
+      }
+      .title{
+          font-size: x-large;
+          text-align: center;
+      }
+     
+      .subtitle1,.rate1,
+      .lastdivheading,
+      .generator1,.weather1
+      {
+          font-size: medium;  
+      }
+      .lastdivheading{
+          margin-top: 19px;
+          margin-bottom: 10px;
+      }
+      .submitbtn{
+        margin-bottom: 225%;
+          margin-top: -91%;
+      }
+
+}

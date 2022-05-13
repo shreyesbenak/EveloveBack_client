@@ -3,6 +3,9 @@ import './Form.css';
 import axios from 'axios'
 import DevelopmentUrl from '../../data/api';
 import imglogo from '../../image/logo.png'
+
+
+
  const Form = () => {
     let data, dateToday;
   let today = new Date();
@@ -39,7 +42,8 @@ dateToday = yyyy + '-' +  mm+ '-' + dd;
     const [fuelrate, setFuelRate] = useState()
     const [pngrate, setPngRte] = useState()
     const [waterrate, setWater] = useState()
-
+ 
+   
 
 const capacityHandle = async(e) =>{
   const res = await e.target.value;
@@ -160,6 +164,8 @@ const kebHandle3 = async(e) => {
 
 }
 
+
+
 const submitForm = (e) => {
   e.preventDefault();
   if (place === 'Kabini') {
@@ -261,7 +267,7 @@ const submitForm = (e) => {
 
   return (
       <>
-      <div className='mainContainer'>
+      <div className='mainContainer1'>
       <div className='logoimg1'>
               <img src={imglogo} />
           </div>
@@ -281,7 +287,7 @@ const submitForm = (e) => {
   <input type="radio" checked={place === 'Kabini'} value="Kabini" onClick={() => setPlace('Kabini')}/>
   <label  className='property3'>Kabini</label>
 
-{console.log(place)}
+
 </div>
 
 <div className='main2'>
@@ -289,25 +295,28 @@ const submitForm = (e) => {
 <h4 className='subtitle1'>Generator Usage</h4>
 </div>
 <h6 className='generator1'> Generator 1</h6>
-<div className='generator'>
-<div>
-<label  className='capacity'>Capacity:</label>
-  <input type="text" id="capacity" name="capacity" placeholder="KVA" className='capacityinput' onChange={capacityHandle}/>
+<div className='generator '>
+<div className='inputlablegenerator'>
+<label  className='capacity'>Capacity:</label><br/>
+  <input type="text" id="capacity" name="capacity" placeholder="KVA" className='capacityinput1' onChange={capacityHandle}/>
 
 </div>
-<div>
-<label  className='capacity'>Generation:</label>
-  <input type="text" id="capacity" name="capacity" placeholder="KVA" className='capacityinput' onChange={GenerationHandle}/>
+<div className='inputlablegenerator'>
+
+<label  className='capacity'>Generation:</label><br/>
+  <input type="text" id="capacity" name="capacity" placeholder="KVA" className='capacityinput1' onChange={GenerationHandle}/>
 
     </div>
-    <div>
-    <label  className='capacity'>Time Run:</label>
-  <input type="text" id="capacity" name="capacity" placeholder="KVA" className='capacityinput' onChange={runTimeHandle}/>
+    <div className='inputlablegenerator'>
+
+    <label  className='capacity'>Time Run:</label><br/>
+  <input type="text" id="capacity" name="capacity" placeholder="KVA" className='capacityinput1' onChange={runTimeHandle}/>
 
     </div>
-    <div>
-    <label  className='capacity'>Diesel Consumption:</label>
-  <input type="text" id="capacity" name="capacity" placeholder="KVA" className='capacityinput' onChange={dieselConsumptionHandle}/> 
+    <div className='inputlablegenerator'>
+
+    <label  className='capacity'>Diesel Consumption:</label><br/>
+  <input type="text" id="capacity" name="capacity" placeholder="KVA" className='capacityinput1' onChange={dieselConsumptionHandle}/> 
  
     </div>
     
@@ -316,25 +325,29 @@ const submitForm = (e) => {
 
 
   <h6 className='generator1'> Generator 2</h6> 
-  <div className='generator'>
-      <div>
+  <div className='generator '>
+  <div className='inputlablegenerator'>
+
          
-         <label  className='capacity'>Capacity:</label>
-        <input type="text" id="capacity" name="capacity" placeholder="KVA" className='capacityinput' onChange={capacityHandle2}/>
+         <label  className='capacity'>Capacity:</label><br/>
+        <input type="text" id="capacity" name="capacity" placeholder="KVA" className='capacityinput1' onChange={capacityHandle2}/>
         </div>
-         <div>
-         <label  className='capacity'>Generation:</label>
-         <input type="text" id="generation" name="generation" placeholder="unit" className='capacityinput' onChange={GenerationHandle2}/>
+        <div className='inputlablegenerator'>
+
+         <label  className='capacity'>Generation:</label><br/>
+         <input type="text" id="generation" name="generation" placeholder="unit" className='capacityinput1' onChange={GenerationHandle2}/>
   
          </div>   
-         <div>
-         <label  className='capacity'>Time Run:</label>
-            <input type="text" id="tr" name="Time Run" placeholder="HH:MM" className='capacityinput' onChange={runTimeHandle2}/>
+         <div className='inputlablegenerator'>
+
+         <label  className='capacity'>Time Run:</label><br/>
+            <input type="text" id="tr" name="Time Run" placeholder="HH:MM" className='capacityinput1' onChange={runTimeHandle2}/>
  
          </div>
-         <div>
-         <label  className='capacity'>Diesel Consumption:</label>
-            <input type="text" id="dc" name="Diesel Consumption" placeholder="In Liters" className='capacityinput' onChange={dieselConsumptionHandle2}/> 
+         <div className='inputlablegenerator'>
+
+         <label  className='capacity'>Diesel Consumption:</label><br/>
+            <input type="text" id="dc" name="Diesel Consumption" placeholder="In Liters" className='capacityinput1' onChange={dieselConsumptionHandle2}/> 
  
          </div>
  </div>
@@ -344,25 +357,29 @@ const submitForm = (e) => {
     <>
     
     <h6 className='generator1'> Generator 3</h6> 
-    <div className='generator'>
-        <div>
+    <div className='generator '>
+    <div className='inputlablegenerator'>
+
            
-           <label  className='capacity'>Capacity:</label>
-          <input type="text" id="capacity" name="capacity" placeholder="KVA" className='capacityinput' onChange={capacityHandle3}/>
+           <label  className='capacity'>Capacity:</label><br/>
+          <input type="text" id="capacity" name="capacity" placeholder="KVA" className='capacityinput1' onChange={capacityHandle3}/>
           </div>
-           <div>
-           <label  className='capacity'>Generation:</label>
-           <input type="text" id="generation" name="generation" placeholder="unit" className='capacityinput' onChange={GenerationHandle3}/>
+          <div className='inputlablegenerator'>
+
+           <label  className='capacity'>Generation:</label><br/>
+           <input type="text" id="generation" name="generation" placeholder="unit" className='capacityinput1' onChange={GenerationHandle3}/>
     
            </div>   
-           <div>
-           <label  className='capacity'>Time Run:</label>
-              <input type="text" id="tr" name="Time Run" placeholder="HH:MM" className='capacityinput' onChange={runTimeHandle3}/>
+           <div className='inputlablegenerator'>
+
+           <label  className='capacity'>Time Run:</label><br/>
+              <input type="text" id="tr" name="Time Run" placeholder="HH:MM" className='capacityinput1' onChange={runTimeHandle3}/>
    
            </div>
-           <div>
-           <label  className='capacity'>Diesel Consumption:</label>
-              <input type="text" id="dc" name="Diesel Consumption" placeholder="In Liters" className='capacityinput' onChange={dieselConsumptionHandle3}/> 
+           <div className='inputlablegenerator'>
+
+           <label  className='capacity'>Diesel Consumption:</label><br/>
+              <input type="text" id="dc" name="Diesel Consumption" placeholder="In Liters" className='capacityinput1' onChange={dieselConsumptionHandle3}/> 
    
            </div>
    </div>
@@ -374,7 +391,7 @@ const submitForm = (e) => {
  <div className='heading'>
   <h4 className='rate1'>Rate Matrix</h4>
   </div>
-  <div className='generator'>
+  <div className='generator margindiv '>
       <div className='margindiv'>
       <label   className='capacity'>KEB:</label> <br/>
   <input type="text" id="keb" name="KEB" placeholder="Rate/Unit" className='capacityinput' onChange={kebRateHandle3}/>
@@ -399,7 +416,7 @@ const submitForm = (e) => {
       <div className='heading'>
   <h4 className='weather1'>Weather Parameters</h4>
   </div>
-  <div className='generator'>
+  <div className='generator margindiv'>
 <div className='margindiv'>
 <label  className='capacity'>Min:</label> <br/>
   <input type="text" id="min" name="min" placeholder="Celsius" className='capacityinput' onChange={MinimumTempuratureHandle3}/>
@@ -422,25 +439,25 @@ const submitForm = (e) => {
       <div >
       <h6 className='lastdivheading'>Kitchen PNG</h6>
     
-   <label className='consumption'>PNG Consumption:</label>
+   <label className='consumption'>PNG Consumption:</label><br/>
  <input type="text" id="pc" name="pc" placeholder="KG" className='capacityinput' onChange={pngHandle3}/> 
       </div>
  <div>
  <h6 className='lastdivheading'>Water Consumption</h6>
 
-  <label className='consumption'>water consumption:</label>
+  <label className='consumption' >water consumption:</label><br/>
  <input type="text" id="wc" name="wc" placeholder="IN KL" className='capacityinput' onChange={WaterConsumptionHandle3} />
  </div>
  <div className='solar' >
  <h6 className='lastdivheading'>Solar Generation</h6>
  
-  <label className='consumption' >Solar Generation:</label>
+  <label className='consumption' >Solar Generation:</label><br/>
  <input type="text" id="sg" name="sg" placeholder="Units" className='capacityinput' onChange={SolarGenerationHandle3}/>
  </div>
 <div className='kebc' >
 <h6 className='lastdivheading' >KEB Consumption</h6>
 
-  <label className='consumption'>KEB Consumption:</label>
+  <label className='consumption'>KEB Consumption:</label><br/>
  <input type="text" id="kc" name="kc" placeholder="Units" className='capacityinput' onChange={kebHandle3}/>
 </div>
     </div>

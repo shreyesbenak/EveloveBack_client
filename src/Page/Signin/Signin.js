@@ -80,36 +80,17 @@ const redireactPath = location.state?.path || '/'
           <div className='maindivimag'>
 
           <div className='login'>
-                <form onSubmit={submithandler}>
-                    <Grid>
-                        <Paper elevation={10} style={paperStyle}>
+                <form onSubmit={submithandler} className=''>
+                    <Grid >
+                        <Paper elevation={10} style={paperStyle} className='paperstyle'>
                             <Grid align='center'>
                             
                                 <h2 style={{color:"#9a7036"}}>Log In</h2>
                             </Grid>
                             <TextField label='Username' placeholder='Enter username' type='text' id='username' fullWidth  style={signintxtStyle }  onChange={onchangeusernamehandler} />
                             <TextField label='Password' placeholder='Enter password' type='password' id='password' fullWidth  style={txtstyle} onChange={onchangepasswordhandler} />
-
-                            {/* <FormControlLabel style={txtstyle}
-                            control={
-                            <Checkbox
-                                name="checkedB"
-                                color="primary"
-                            />
-                            }
-                            label="Remember me"
-                         /> */}
                             <Button type='submit'  variant="contained" className="btnlogin" style={btnstyle} fullWidth>Log In</Button>
-                            {/* <Typography >
-                                <Link href="#" >
-                                    Forgot password ?
-                                </Link>
-                            </Typography> */}
-                            {/* <Typography > Not registered?
-                            <Link href="/signup" >
-                                Create account
-                            </Link>
-                        </Typography> */}
+                           
                         </Paper>
                     </Grid>
                 </form>
